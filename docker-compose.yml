@@ -27,7 +27,7 @@ services:
   server1:
     build: ./server
     privileged: true
-    working_dir: /var/www/html/public
+    working_dir: /var/www/html
     volumes:
       - ./server/src:/var/www/html
     networks:
@@ -37,7 +37,7 @@ services:
   server2:
     build: ./server
     privileged: true
-    working_dir: /var/www/html/public
+    working_dir: /var/www/html
     volumes:
       - ./server/src:/var/www/html
     networks:
